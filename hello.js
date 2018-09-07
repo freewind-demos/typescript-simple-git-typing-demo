@@ -1,3 +1,6 @@
-const _ = require('lodash')
+const workingDirPath = './local-repo'
+const simpleGit = require('simple-git')(workingDirPath)
 
-console.log('Hello, ' + _.capitalize('javascript'))
+simpleGit.clone('https://github.com/freewind-demos/javascript-frontend-hello-world-demo.git', 'demo-project')
+
+console.log('cloned to: local-repo/demo-project')
