@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "demo": "rm -rf local-repo && mkdir local-repo && node demo.js"
+    "demo": "rm -rf local-repo && mkdir local-repo && ts-node demo.ts"
   },
   "dependencies": {
     "simple-git": "^1.96.0"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   }
 }
